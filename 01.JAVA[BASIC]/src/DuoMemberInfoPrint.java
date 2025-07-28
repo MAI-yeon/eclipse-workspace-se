@@ -11,6 +11,7 @@ public class DuoMemberInfoPrint{
 		
 		/*
 		 * 3.변수 데이타 출력
+		 * 3.변수 데이타 출력
 		 */
 	
 		/*

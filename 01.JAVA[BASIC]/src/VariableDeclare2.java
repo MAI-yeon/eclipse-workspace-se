@@ -1,5 +1,5 @@
 
-public class VariableDeclare2 {
+public class VariableDeclare2 { 
 
 	public static void main(String[] args) {
 		/*

@@ -47,9 +47,9 @@ public class DuoMemberInfoPrint{
 		String  i;
 		a = "회원번호 : 236514";
 		b = "이    름 : 연승문";
-		c = "주민번호 : 연승문";
-		d = "성    별 : 990525-*******";
-		e = "결혼횟수 : 남";
+		c = "주민번호 : 990525-*******";
+		d = "성    별 : 남";
+		e = "결혼횟수 : false";
 		f = "흡연여부 : true" ;
 		g = "   키    : 178.75";
 		h = "학    점 : A";
@@ -86,7 +86,7 @@ public class DuoMemberInfoPrint{
 		name = "연승문";
 		number = "990525-1234567";
 	    k = '남';
-	    isMarried = true;
+	    isMarried = false;
 	    isSmoking = true;
 	    height = 178.75;
 	    l = 'A';

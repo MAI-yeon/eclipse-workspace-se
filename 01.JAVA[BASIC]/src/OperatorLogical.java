@@ -11,6 +11,7 @@ public class OperatorLogical {
 		    ex> true || false, false && false
         */
 		
+		int a = 4;
 	
 
 

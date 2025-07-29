@@ -12,7 +12,11 @@ public class OperatorArithmatic {
  		result = a * b;
  		System.out.println("a * b-->" + result);
  		result = a / b;
- 		System.out.println("a / b-->" + result); //????
+ 		System.out.println("a / b-->" + result); //???? - 연산시에 형변환
+ 		double dresult = a/b;
+ 		System.out.println("a / b-->" + dresult);
+ 		dresult = (double)a/b;
+ 		System.out.println("a / b-->" + dresult);
  		
  		
  		/*

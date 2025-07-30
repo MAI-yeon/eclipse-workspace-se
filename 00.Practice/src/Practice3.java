@@ -18,10 +18,12 @@ public class Practice3 {
 		System.out.println(i5);
 
 		/*
-		 * 진수 이름 접두사 예시
+		 * 진수    이름         접두사        예시
 		 * 
-		 * 2진수 Binary 0b 또는 0B 0b1010 → 10(십진수 10) 8진수 Octal 0o 또는 0O 0o12→ 10(십진수 10)
-		 * 10진수 Decimal 없음 10 (일반 숫자) 16진수 Hexadecimal 0x 또는 0X 0xA →10(십진수 10)
+		 * 2진수   Binary       0b 또는 0B    0b1010 → 10(십진수 10) 
+		 * 8진수   Octal        0o 또는 0O    0o12→ 10(십진수 10)
+		 * 10진수  Decimal      없음          10 (일반 숫자) 1
+		 * 6진수   Hexadecimal  0x 또는 0X    0xA →10(십진수 10)
 		 */
 
 		long l1 = 232;
@@ -84,7 +86,47 @@ public class Practice3 {
 		
 		
 		
+		
 		System.out.println("-----------------boolean-----------------");
+		
+		boolean bool1 = true;
+		boolean bool2 = false;
+		boolean bool3 = true;
+		boolean bool4 = bool3;
+		System.out.println(bool1);
+		System.out.println(bool2);
+		System.out.println(bool3);
+		System.out.println(bool4);
+		
+		System.out.println("------문자열형(타입) string------");
+		
+		String str1 = "오늘은";
+		String str2 = "월요일";
+		String str3 = "타입을 공부 합니다";
+		System.out.println(str1);
+		System.out.println(str2);
+		System.out.println(str3);
+		
+		String str4 = str1 + " " + str2 + " " + str3;
+		System.out.println(str4);
+		System.out.println(str1 + " " + str2 + " " + "언제 한주가 지나가나요");
+		
+		
+		
+		String name = "연승문";
+		int age = 27;
+		char gender = '남';
+		double height = 178.53;
+		double weight = 75.33;
+		boolean isMarried = false;
+		
+		System.out.println("------------------------------------------");
+		System.out.println("이름   나이   성별   체중    키   결혼여부");
+		System.out.println("------------------------------------------");
+		System.out.println(name + "   " + age + "   "  + gender + "   "  + height + "   " + weight + "   " + isMarried);
+		
+		
+		
 	}
 
 }

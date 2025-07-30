@@ -12,10 +12,13 @@ public class A {
 		int b;
 		String name;
 
-		
+		a = 10;
+		b = 20;
 		name = "연승문";
 
 		
+		System.out.println(a);
+		System.out.println(b);
 		System.out.println(name);
 
 	}

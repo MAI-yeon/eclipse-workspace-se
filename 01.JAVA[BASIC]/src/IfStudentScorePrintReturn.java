@@ -40,8 +40,6 @@ public class IfStudentScorePrintReturn {
 
 		}
 		System.out.printf("학점은 %c 입니다.", hakjum);
-		
-		
 
 	}
 }

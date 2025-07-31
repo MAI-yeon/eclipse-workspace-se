@@ -87,8 +87,48 @@ public class ForTest {
 		
 		System.out.println();
 		
+		/*
+		 * a,b,c,d,e,f.......z
+		 */
+		
 		System.out.println(">> 영문소문자(continue)");
+		for (char c = 'a'; c <= 'z'; c++) {
+			System.out.print(c);
+			if(c == 'z') {
+				continue;
+			}
+			
+			System.out.print(",");
+			
+		}
+		System.out.println();
+		
+		/*
+		 [Quiz]
+		 - 영문소문자출력
+		   a b c d e \n
+		   f g h i j \n
+		   k l m n o \n
+		   p q r s t \n
+		   u v w x y \n
+		   z
+		 */
+		
+		for (char c = 'a'; c <= 'z'; c++) {
+			System.out.print(c+" ");
+			int charcount = c - 'a' + 1;
+			if(charcount % 5 == 0) { 
+				System.out.print("\n");
+				
+			}	
+				
+			
+		}
+			System.out.println();
+		
 		System.out.println(">> 홀수,짝수합[1~100]");
+		
+		
 
 		
 	}

@@ -41,32 +41,34 @@ public class WhileGugudan {
 		 * 2*9=18 3*9=27 4*9=36 5*9=45 6*9=54 7*9=63 8*9=72 9*9=81
 		 */
 
-		i = 2;
-		while (i <= 9) {
-			int j = 1;
-			while (j <= 9) {
-				System.out.printf("%d * %d = %2d   ", i, j, i * j);
-				j++;
+		
+		int j = 1;
+		while( j <= 9) {
+			i = 2;
+			while( i <= 9) {
+				System.out.printf("%d * %d = %2d  ", i,j,i*j);
+				i++;
 			}
 			System.out.println();
+			j++;
+		}
+		
+		System.out.println("----------------------------------------------------");
+		
+		i = 1;
+		while(i<=9) {
+			j=2;
+			while(j<=9) {
+				System.out.printf("%d * %d = %2d ",j,i,i*j);
+				j++;
+			}
+			System.out.print("\n");
 			i++;
 		}
 
 		
 		
-		System.out.println("----------------------------------------------");
 		
-		
-		int j = 1;
-        while (j <= 9) {
-            i = 2;
-            while (i <= 9) {
-                System.out.printf("%d * %d = %2d  " , i, j, i * j);
-                i++;
-            }
-            System.out.println();
-            j++;
-        }
         
      
 

@@ -17,6 +17,31 @@ public class WhileUseChar {
 			
 		}
 		
+		/*
+		 * 영문 소문자 출력
+		 */
+		
+		System.out.println();
+		char c2 = 'a';
+		while(c2 <= 'z') {
+			System.out.print(c2+ " ");
+			c2++;
+		}
+		System.out.println();
+		
+		
+		/*
+		 [Quiz]
+		 - 영문소문자출력
+		   a b c d e \n
+		   f g h i j \n
+		   k l m n o \n
+		   p q r s t \n
+		   u v w x y \n
+		   z
+		 */
+		
+		
 		
 
 	}

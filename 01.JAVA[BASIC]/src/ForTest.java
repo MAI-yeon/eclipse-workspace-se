@@ -127,10 +127,25 @@ public class ForTest {
 			System.out.println();
 		
 		System.out.println(">> 홀수,짝수합[1~100]");
+		int evenTot = 0;
+		int oddTot = 0;
+		for (int i = 1; i <= 100; i++) {
+			if(i % 2 == 0) {
+				evenTot+=i;
+				// evenTot = evenTot += i;
+			}else {
+				oddTot+=i;
+				// oddTot = oddTot += i;
+			}
+			
 		
+	
+		}
 		
+		System.out.println("짝수합 : "+ evenTot);
+		System.out.println("홀수합 : "+ oddTot);
 
-		
+	
 	}
 
 }

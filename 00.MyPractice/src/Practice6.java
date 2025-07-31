@@ -58,6 +58,53 @@ public class Practice6 {
 			System.out.printf("%d는 평년입니다.\n",year);
 		}
 		
+		int hour = 3;
+		int minute = 5;
+		System.out.println(hour + "시간" + minute + "분");
+		
+		int totalminute = (hour*60) + minute;
+		System.out.println("총"+ totalminute +"분");
+		
+		
+		System.out.println();
+		
+		int x = 3;
+		int y = 5;
+		System.out.println("x: " + x + ", y: "+y);
+		System.out.printf("x : %d, y : %d",x,y);
+		
+		System.out.println();
+		
+		int temp = x;
+		x=y;
+		y=temp;
+		System.out.printf("x : %d, y : %d",x,y);
+		
+		
+		int var1 = 0b1011;
+		int var2 = 0206;
+		int var3 = 365;
+		int var4 = 0xB3;
+		
+		System.out.println();
+		
+		System.out.println("var1 : "+ var1);
+		System.out.println("var2 : "+ var2);
+		System.out.println("var3 : "+ var3);
+		System.out.println("var4 : "+ var4);
+		
+		System.out.println();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
 	
 		
 		

@@ -52,6 +52,20 @@ public class ForTest {
 		System.out.println();
 		
 		System.out.println(">> 3과4의 최소공배수만출력[1~100](break)");
+		/*
+		 * 12
+		 * - 반복문에서 사용(for, while)
+		 * - break문이 실행되면 반복블록을 빠져나옴
+		 */
+		for (int i = 1; i < 100; i++) {
+			if( i % 3 == 0 && i % 4 == 0) {
+				System.out.print(i+ " ");
+				break;
+			}
+		
+		}
+		
+		System.out.println();
 		
 		System.out.println(">> 4의 배수가출아닌수만출력[1~100](continue)");
 		System.out.println(">> 영문소문자(continue)");

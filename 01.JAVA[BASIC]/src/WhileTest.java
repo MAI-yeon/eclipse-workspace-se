@@ -32,7 +32,7 @@ public class WhileTest {
 		 */
 		
 		
-		boolean isPlay = true;
+		boolean isPlay = false;
 		while (isPlay) {
 			System.out.println("stmr2");
 		}

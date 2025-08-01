@@ -26,9 +26,9 @@ public class StudentMemberFieldMain {
 		
 		student2.studentNumber=2;
 		student2.name="김경수";
-		student2.kor=78;
-		student2.eng=66;
-		student2.math=55;
+		student2.kor=58;
+		student2.eng=68;
+		student2.math=78;
 		
 		
 		
@@ -60,7 +60,7 @@ public class StudentMemberFieldMain {
 		student2.avg = student2.tot / 3.0;
 		
 		
-		
+		/*
 		if(student2.avg >= 90 && student2.avg <=100) {
 			student2.gradePoint = 'A';
 		}else if (student2.avg >= 90 && student2.avg <=100) {
@@ -72,6 +72,26 @@ public class StudentMemberFieldMain {
 		}else {
 			student2.gradePoint = 'F';
 		}
+		*/
+		
+		if(student2.avg>=90) {
+			student2.gradePoint='A';
+		}else if(student2.avg>=80) {
+			student2.gradePoint='B';
+		}else if(student2.avg>=70) {
+			student2.gradePoint='C';
+		}else if(student2.avg>=60) {
+			student2.gradePoint='D';
+		}else {
+			student2.gradePoint='F';
+		}
+		
+		
+		
+		
+		
+		
+		
 
 		
 		

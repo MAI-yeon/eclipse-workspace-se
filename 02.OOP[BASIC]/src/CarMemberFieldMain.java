@@ -10,7 +10,7 @@ public class CarMemberFieldMain {
 
 		Car car1;
 
-		// car클래스를 사용하여 차 객체를 생성한 후 차 객체 데이터가 car1 변수에 대입된다
+		// Car클래스를 사용하여 차 객체를 생성한 후 차 객체 데이터가 car1 변수에 대입된다
 
 		car1 = new Car(); // 객체 생성
 

@@ -42,6 +42,56 @@ public class Car {
 	int outTime; // 출차시간
 	int fee; // 주차요금
 	
+	/*
+	 * 멤버메소드(행위 OR 필드)	
+	 */
+	
+	/*
+	 * 입차 데이터(번호, 시간) 대입
+	 */
+	
+	public void setIpChaDate(String no, int inTime) {
+		this.no=no;
+		this.inTime=inTime;
+		
+		
+	}
+	
+	/*
+	 * 출차시간 멤버필드 outTime 대입
+	 */
+	
+	public void setOutTime(int outTime) {
+		this.outTime=outTime; 
+	}
+	
+	
+	
+	/*
+	 * 주차요금 계산
+	 */
+	 public void calculatefee() {
+		  this.fee=(this.outTime-this.inTime)*1000;
+	 }
+	
+	/* 
+	 * 차량 정보 출력
+	 */
+	
+	public void print() {
+		System.out.printf("-------------------------------------\n");
+		System.out.printf("%s %s %s %s\n", " 차량번호", "입차시간", "출차시간", "주차요금");
+		System.out.printf("-------------------------------------\n");
+		System.out.printf("%7s %7d %8d     ￦%2d\n ",this.no,this.inTime,this.outTime,this.fee);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
 	
 
 }

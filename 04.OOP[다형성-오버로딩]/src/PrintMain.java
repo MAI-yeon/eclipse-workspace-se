@@ -13,8 +13,6 @@ public class PrintMain {
 		p.print(1,2);
 		p.print(1,2,3);
 		
-		System.out.println("문자열");
-		System.out.println(123);
 		
 	}
 

@@ -1,4 +1,5 @@
 
+
 public class StaticMain {
 
 	public static void main(String[] args) {
@@ -10,9 +11,14 @@ public class StaticMain {
 		 * - 클래스 이름. 정적멤버이름
 		 */
 		
+		
+		
+		
 		System.out.println(Static.static_field);
+		Static.static_method();
 		Static.static_field=8888;
 		System.out.println(Static.static_field);
+		Static.static_method();
 		Static.static_field=9999;
 		System.out.println(Static.static_field);
 		Static.static_method();
@@ -34,14 +40,15 @@ public class StaticMain {
 		static2.instance_field=2222;
 		static2.instance_method();
 		
-		/*
-		
-		System.out.println(static1.static_field);
-		System.out.println(static1.static_field);
-		static1.static_method();
-		static2.static_method();
-		
-		*/
+		/*	
+		 
+		<<The static method static_method() from the type Static should be accessed in a static way>	
+		  System.out.println(static1.static_field);
+		  System.out.println(static2.static_field);
+		  static1.static_method();
+		  static2.static_method();
+		  
+		*/ 
 		
 		
 		

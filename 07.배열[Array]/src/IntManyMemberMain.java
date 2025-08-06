@@ -10,7 +10,7 @@ public class IntManyMemberMain {
 		intManyMember.i1=22;
 		intManyMember.i2=33;
 		intManyMember.i3=44;
-		intManyMember.i1=55;
+		intManyMember.i4=55;
 		
 		
 		System.out.println(intManyMember.i0);

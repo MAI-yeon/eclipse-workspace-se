@@ -1,16 +1,12 @@
 
 
 public class Account {
-	/*
-	 * 필드
-	 */
+	
 	private int no;// 계좌번호
 	private String owner;// 계좌주이름
 	private int balance;// 계좌잔고
 	private double iyul;// 계좌이율
-	/*
-	 * 생성자메쏘드
-	 */
+	
 	public Account() {
 	}
 	public Account(int no, String owner, int balance, double iyul) {
@@ -20,9 +16,7 @@ public class Account {
 		this.iyul = iyul;
 	}
 
-	/*
-	 * 메쏘드
-	 */
+
 	/*
 	 * 계좌데이타대입
 	 */
@@ -55,7 +49,7 @@ public class Account {
 	/*
 	 * 계좌헤더출력
 	 */
-	public void headerPrint() {
+	public static void headerPrint() {
 		System.out.printf("-------------------------\n");
 		System.out.printf("%s %s %4s %4s\n","번호","이름","잔고","이율");
 		System.out.printf("-------------------------\n");

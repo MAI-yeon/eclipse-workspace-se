@@ -20,8 +20,10 @@ public class PrimitiveTypeArrayMain {
 
 	public static void main(String[] args) {
 
+		/*
 		int intType;
 		intType=90;
+		*/
 		
 		int[] intArray;
 		intArray = new int[5];
@@ -126,7 +128,7 @@ public class PrimitiveTypeArrayMain {
 		
 		for (int i = 0; i < nameArray.length; i++) {
 			String tempName=nameArray[i];
-			System.out.print(tempName);
+			System.out.print(tempName+"\n");
 		}
 		
 		System.out.println("----------------enhanced for-------------------");

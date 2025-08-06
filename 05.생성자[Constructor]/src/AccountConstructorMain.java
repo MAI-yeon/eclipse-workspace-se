@@ -9,16 +9,13 @@ public class AccountConstructorMain {
 		Account acc4=new Account(4444, "NUM", 9000, 4.2);
 		Account acc5=new Account(5555, "OIM", 3800, 2.1);
 		
-		
 		acc1.headerPrint();
+		
 		acc1.print();
 		acc2.print();
 		acc3.print();
 		acc4.print();
 		acc5.print();
-	
-		
-		
 
 	}
 

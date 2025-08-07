@@ -4,10 +4,12 @@ public class CarArrayMain {
 
 	public static void main(String[] args) {
 
-		Car[] carArray = { null, null, new Car("5654", 8), 
-				null, null, new Car("3422", 12), null, null,
-				null, null,null, null, null, null, new Car("7789", 11), null, new Car("1120", 10), null, null, null, null,
-				new Car("2389", 9), null, null, null, null, null, null, null, new Car("5555", 6) };
+		Car[] carArray = { null, null, new Car("5654", 8), null, null, 
+				           new Car("3422", 12), null, null,null, null,
+                           null, null, null, null, new Car("7789", 11),
+                           null, new Car("1120", 10), null, null, null, 
+                           null,new Car("2389", 9), null, null, null, 
+                           null, null, null, null, new Car("5555", 6) };
 
 		/*
 		 * null.메소드() --> NullPointException

@@ -50,7 +50,7 @@ public class ReferenceTypeAccountArrayMain {
 
 		// System.out.println("7.은행 계좌들중에서 이름이 KIM인 계좌 여러개 찾아서 출력[String객체배우고난후에]");
 		System.out.println("7.6666번계좌 3000원입금");
-		for (Account account : accounts) {         //for (int i = 0;i<accounts.length;i++)
+		for (Account account : accounts) { // for (int i = 0;i<accounts.length;i++)
 			if (account.getNo() == 6666) {
 				System.out.println(">> 입금 전 금액");
 				account.print();
@@ -63,42 +63,73 @@ public class ReferenceTypeAccountArrayMain {
 
 		System.out.println("8.9999번계좌 3000원출금[Quiz]");
 		for (Account account : accounts) {
-			if(account.getNo()==9999) {
+			if (account.getNo() == 9999) {
 				System.out.println(">> 출금전");
 			}
 		}
-		
-		
-		
+
 		System.out.println("9.계좌잔고순으로 오름[내림]차순정렬");
 		System.out.println("#######################정렬전#####################");
 		for (Account account : accounts) {
 			account.print();
 		}
-		for(int i=0;i<accounts.length-1;i++) {
-		
-		for(int j =0;j<accounts.length-1;j++) {
-			if(accounts[j].getBalance() > accounts[j+1].getBalance()) {  //여기서 < 는 오름차순 > 는 내림차순
-				//주소값 교환
-				Account tempJAccount=accounts[j];
-				accounts[j]=accounts[j+1];
-				accounts[j+1]=tempJAccount;
-				
+		for (int i = 0; i < accounts.length - 1; i++) {
+
+			for (int j = 0; j < accounts.length - 1; j++) {
+				if (accounts[j].getBalance() > accounts[j + 1].getBalance()) { // 여기서 < 는 오름차순 > 는 내림차순
+					// 주소값 교환
+					Account tempJAccount = accounts[j];
+					accounts[j] = accounts[j + 1];
+					accounts[j + 1] = tempJAccount;
+
+				}
 			}
-		}
-		
+
 		}
 		System.out.println("#######################정렬후#####################");
 		for (Account account : accounts) {
 			account.print();
 		}
-		
-		
-		System.out.println("10.계좌번호순으로 오름(내림)차순정렬[Quiz]");
-		System.out.println("11.5555계좌한개 이율을 9.9으로변경");
-		System.out.println("12.VIP계좌(잔고50000원이상)여러개 잔고 50원 증가");
-		
 
+		System.out.println("10.계좌번호순으로 오름(내림)차순정렬[Quiz]");
+		for (int i = 0; i < accounts.length-1; i++) {
+			for (int j = 0; j < accounts.length-1; j++) {
+				if (accounts[j].getNo() > accounts[j + 1].getNo()) {
+					Account tempAccount = accounts[j];
+					accounts[j] = accounts[j + 1];
+					accounts[j + 1] = tempAccount;
+				}
+
+			}
+		}
+		for (Account account : accounts) {
+			account.print();
+		}
+
+		System.out.println("11.5555계좌한개 이율을 9.9으로변경");
+		for (Account account : accounts) {
+			if (account.getNo()==5555) {
+				System.out.println(">> 변경정");
+				account.print();
+				account.setIyul(0.9);
+				System.out.println(">> 변경후");
+				account.print();
+				break;
+			}
+		}
+		
+		
+		
+		System.out.println("12.VIP계좌(잔고50000원이상)여러개 잔고 50원 증가");
+
+		for (Account account : accounts) {
+			if(account.getBalance()>=50000) {
+				account.deposit(50);
+			}
+		}
+		for (Account account : accounts) {
+			account.print();
+		}
 	}
 
 }

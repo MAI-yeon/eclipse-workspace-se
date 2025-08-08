@@ -4,12 +4,9 @@ public class CarArrayMain {
 
 	public static void main(String[] args) {
 
-		Car[] carArray = { null, null, new Car("5654", 8), null, null, 
-				           new Car("3422", 12), null, null,null, null,
-                           null, null, null, null, new Car("7789", 11),
-                           null, new Car("1120", 10), null, null, null, 
-                           null,new Car("2389", 9), null, null, null, 
-                           null, null, null, null, new Car("5555", 6) };
+		Car[] carArray = { null, null, new Car("5654", 8), null, null, new Car("3422", 12), null, null, null, null,
+				null, null, null, null, new Car("7789", 11), null, new Car("1120", 10), null, null, null, null,
+				new Car("2389", 9), null, null, null, null, null, null, null, new Car("5555", 6) };
 
 		/*
 		 * null.메소드() --> NullPointException
@@ -34,8 +31,8 @@ public class CarArrayMain {
 		System.out.println("3. 주차가능주차구획수");
 
 		int parkingCount = 0;
-		for (int i = 0; i < carArray.length; i++) {
-			if (carArray[i] == null) {
+		for (Car car : carArray) {
+			if (car == null) {
 				parkingCount++;
 			}
 		}
@@ -48,58 +45,58 @@ public class CarArrayMain {
 		Car newCar = new Car("7777", 14);
 		boolean parking = false;
 
-		for (int i = 0; i < carArray.length; i++) {
-			if (carArray[i] == null)
-			{
-				carArray[i] = newCar;
+		for (Car car : carArray) {
+			if (car == null) {
+				car = newCar;
 				parking = true;
 				break;
 			}
 		}
-		
+
 		if (parking) {
-		    System.out.println(">> 차량이 입차되었습니다.");
+			System.out.println(">> 차량이 입차되었습니다.");
 		} else {
-		    System.out.println(">> 빈 주차구획이 없습니다.");
+			System.out.println(">> 빈 주차구획이 없습니다.");
 		}
 
 		/*
 		 * 1. 차량객체생성
 		 * 2. 빈자리찾아서 대입
 		 */
-		
+
 		System.out.println();
 		System.out.println("5.차량번호 7789번  차한대 정보출력");
 		Car.headerPrint();
-		
-		for (int i = 0; i < carArray.length; i++) {
-		    if (carArray[i] != null && carArray[i].getNo().equals("7789")) {
-		        carArray[i].print();
-		       
-		        break;
-		    }
+
+		for (Car car : carArray) {
+
+			if (car != null && car.getNo().equals("7789")) {
+				car.print();
+
+				break;
+			}
 		}
 
-	
-		
 		System.out.println();
-		
+
 		System.out.println("6.입차시간 10시이후 차량여러대 찾아서 정보출력");
-		
-		for (int i = 0; i < carArray.length; i++) {
-		    if (carArray[i] != null && carArray[i].getInTime() > 10) {
-		        carArray[i].print();
-		    }
+
+		for (Car car : carArray)
+
+		{
+			if (car != null && car.getInTime() >= 10) {
+				car.print();
+			}
 		}
 		System.out.println();
 		System.out.println("7.2389번차량 18시 출차");
-		
+
 		for (int i = 0; i < carArray.length; i++) {
-		    if (carArray[i] != null && carArray[i].getNo().equals("2389")) {
-		        carArray[i].setOutTime(18);        
-		        carArray[i].calculateFee();  
-		        break;
-		    }
+			if (carArray[i] != null && carArray[i].getNo().equals("2389")) {
+				carArray[i].setOutTime(18);
+				carArray[i].calculateFee();
+				break;
+			}
 		}
 		Car.headerPrint();
 		for (int i = 0; i < carArray.length; i++) {
@@ -108,8 +105,7 @@ public class CarArrayMain {
 				break;
 			}
 		}
-		
-		
+
 		/*
 		 1.2389번 차량 찾기
 		 2.출차(나가는시간대입,요금계산)
@@ -120,11 +116,11 @@ public class CarArrayMain {
 		Car.headerPrint();
 		for (int i = 0; i < carArray.length; i++) {
 			if (carArray[i] != null && carArray[i].getNo().equals("2389")) {
-				carArray[i]=null;
+				carArray[i] = null;
 				break;
 			}
 		}
-		
+
 		for (int i = 0; i < carArray.length; i++) {
 			if (carArray[i] != null) {
 				carArray[i].print();

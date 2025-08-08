@@ -47,8 +47,36 @@ public class ReferenceTypeAccountArrayMain {
 				account.print();
 			}
 		}
+		
+		
+		
+		
+		
+		
 
-		// System.out.println("7.은행 계좌들중에서 이름이 KIM인 계좌 여러개 찾아서 출력[String객체배우고난후에]");
+		System.out.println("7.은행 계좌들중에서 이름이 KIM인 계좌 여러개 찾아서 출력[String객체배우고난후에]");
+		for (Account account : accounts) {
+			String tempOwner=account.getOwner();
+			String searchOwner=new String("KIM");
+			
+			/*
+			if(tempOwner==searchOwner) {
+				account.print();
+			*/	
+			
+			if(tempOwner.equals(searchOwner)) {
+				account.print();
+				
+				
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
 		System.out.println("7.6666번계좌 3000원입금");
 		for (Account account : accounts) { // for (int i = 0;i<accounts.length;i++)
 			if (account.getNo() == 6666) {

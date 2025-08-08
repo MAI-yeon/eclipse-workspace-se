@@ -49,7 +49,8 @@ public class CarArrayMain {
 		boolean parking = false;
 
 		for (int i = 0; i < carArray.length; i++) {
-			if (carArray[i] == null) {
+			if (carArray[i] == null)
+			{
 				carArray[i] = newCar;
 				parking = true;
 				break;
@@ -69,19 +70,17 @@ public class CarArrayMain {
 		
 		System.out.println();
 		System.out.println("5.차량번호 7789번  차한대 정보출력");
+		Car.headerPrint();
 		
-		boolean found = false;
 		for (int i = 0; i < carArray.length; i++) {
 		    if (carArray[i] != null && carArray[i].getNo().equals("7789")) {
 		        carArray[i].print();
-		        found = true;
+		       
 		        break;
 		    }
 		}
 
-		if (!found) {
-		    System.out.println(">> 해당 차량이 없습니다.");
-		}
+	
 		
 		System.out.println();
 		
@@ -99,12 +98,16 @@ public class CarArrayMain {
 		    if (carArray[i] != null && carArray[i].getNo().equals("2389")) {
 		        carArray[i].setOutTime(18);        
 		        carArray[i].calculateFee();  
-		        carArray[i].printReceipt();
-		        carArray[i] = null;            
 		        break;
 		    }
 		}
-		
+		Car.headerPrint();
+		for (int i = 0; i < carArray.length; i++) {
+			if (carArray[i] != null && carArray[i].getNo().equals("2389")) {
+				carArray[i].print();
+				break;
+			}
+		}
 		
 		
 		/*
@@ -115,6 +118,13 @@ public class CarArrayMain {
 		 */
 		System.out.println("8. 2389번차량 출차후전체 차량출력");
 		Car.headerPrint();
+		for (int i = 0; i < carArray.length; i++) {
+			if (carArray[i] != null && carArray[i].getNo().equals("2389")) {
+				carArray[i]=null;
+				break;
+			}
+		}
+		
 		for (int i = 0; i < carArray.length; i++) {
 			if (carArray[i] != null) {
 				carArray[i].print();
